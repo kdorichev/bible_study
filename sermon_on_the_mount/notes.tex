@@ -1,0 +1,95 @@
+% Этот шаблон документа разработан в 2014 году
+% Данилом Фёдоровых (danil@fedorovykh.ru) 
+% для использования в курсе 
+% <<Документы и презентации в \LaTeX>>, записанном НИУ ВШЭ
+% для Coursera.org: http://coursera.org/course/latex .
+% Исходная версия шаблона --- 
+% https://www.writelatex.com/coursera/latex/5.3
+
+% В этом документе преамбула
+\documentclass[12pt,article,a4paper,fittopage,oneside]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\frenchspacing
+
+\renewcommand{\epsilon}{\ensuremath{\varepsilon}}
+\renewcommand{\phi}{\ensuremath{\varphi}}
+\renewcommand{\kappa}{\ensuremath{\varkappa}}
+\renewcommand{\le}{\ensuremath{\leqslant}}
+\renewcommand{\leq}{\ensuremath{\leqslant}}
+\renewcommand{\ge}{\ensuremath{\geqslant}}
+\renewcommand{\geq}{\ensuremath{\geqslant}}
+\renewcommand{\emptyset}{\varnothing}
+
+%%% Содержание с точками
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%%% Обычный шрифт в содержании
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+%%% Отступы в содержании
+\cftsetindents{section}{1.5em}{0em}
+\cftsetindents{subsection}{3.8em}{0em}
+\setlength{\cftbeforesecskip}{0em}
+
+%%% Страница
+\usepackage{extsizes} % Возможность сделать 14-й шрифт
+\usepackage{geometry} % Простой способ задавать поля
+    		\geometry{top=30mm}
+    		\geometry{bottom=40mm}
+    		\geometry{left=30mm}
+    		\geometry{right=20mm}
+
+\usepackage{setspace} % Интерлиньяж
+\onehalfspacing % Интерлиньяж 1.5
+
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{				% Гиперссылки
+    unicode=true,           % русские буквы в раздела PDF
+    colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
+    linkcolor=black,          % внутренние ссылки
+    citecolor=black,        % на библиографию
+    filecolor=magenta,      % на файлы
+    urlcolor=blue           % на URL
+}
+
+
+\title{Нагорная проповедь Иисуса Христа\\Изучение Библии}
+\author{Константин Доричев}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section*{Наблюдения}
+\addcontentsline{toc}{section}{Наблюдения}
+
+\subsection*{1.10.2024}
+
+Так называемая <<нагорная проповедь>> Иисуса обращена ко многим, не только к узкой группе ближайших учеников. Эта проповедь записана в Евангелии от Матфея, главы 5--7, в Евангелии от Луки, 6:20-49
+
+Иисус использует:
+\begin{itemize}
+    \item риторические вопросы
+    \item иллюстрации и примеры
+    \item повелительное наклонение
+    \item выводы
+\end{itemize}
+
+
+Иисус ссылается на заповеди Моисея, но не то чтобы противопоставляет им Свои слова, а как бы превозносит: <<Вы слышали, что сказано\ldots А Я говорю вам\ldots>>
+
+	
+\end{document}
+
+
